@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/id/1015/300/200" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/id/1025/300/200" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/id/1035/300/200" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/id/1045/300/200" onclick="openLightbox(this)">
+    </div>
+
+    <div id="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+
+        <button onclick="prevImage()">❮</button>
+
+        <img id="lightbox-img">
+
+        <button onclick="nextImage()">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
